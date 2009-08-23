@@ -1,0 +1,31 @@
+TODO: KEEP THIS UP TO DATE!
+Nr. | Addr.  | Hw. Source   | defined in
+----+--------+--------------+------------
+  1 | 0x0000 | RESET        | main.c // more or less directly
+  2 | 0x0002 | INT0         | 
+  3 | 0x0004 | INT1         | 
+  4 | 0x0006 | INT2         | 
+  5 | 0x0008 | PCINT0       | 
+  6 | 0x000A | PCINT1       | 
+  7 | 0x000C | PCINT2       | 
+  8 | 0x000E | PCINT3       | 
+  9 | 0x0010 | WDT          | 
+ 10 | 0x0012 | TIMER2_COMPA | 
+ 11 | 0x0014 | TIMER2_COMPB | 
+ 12 | 0x0016 | TIMER2_OVF   | sensor.c
+ 13 | 0x0018 | TIMER1_CAPT  | 
+ 14 | 0x001A | TIMER1_COMPA | pwm.c
+ 15 | 0x001C | TIMER1_COMPB | pwm.c
+ 16 | 0x001E | TIMER1_OVF   | pwm.c
+ 17 | 0x0020 | TIMER0_COMPA |
+ 18 | 0x0022 | TIMER0_COMPB |
+ 19 | 0x0024 | TIMER0_OVF   |
+ 20 | 0x0026 | SPI_STC      |
+ 21 | 0x0028 | USART0_RX    |
+ 22 | 0x002A | USART0_UDRE  |
+ 23 | 0x002C | USART0_TX    |
+ 24 | 0x002E | ANALOG_COMP  |
+ 25 | 0x0030 | ADC          | sensor.c
+ 26 | 0x0032 | EE_READY     |
+ 27 | 0x0034 | TWI          |
+ 28 | 0x0036 | SPM_READ     |
