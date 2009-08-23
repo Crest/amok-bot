@@ -1,0 +1,20 @@
+TODO: KEEP THIS UP TO DATE!
+
+PURPOSE:
+	Document hardware usage so we know which
+	code screws around with what hardware.
+
+JTAG: disabled by pwm.c/init_pwm()
+
+TIMER0/TIMER1: pwm.c
+	- Both timers share a common prescaler.
+	- TIMER0 not used.
+
+TIMER2: sensor.c/init_sensor()
+
+PORTC/PORTD: pwm.c
+	- PORTC0..1 is unused
+	- PORTD0..1 is unused
+	- DDRC0..1 is written as 0b00
+	- DDRD0..1 is written as 0b00
+	- The other port pins are used for software pwm.
