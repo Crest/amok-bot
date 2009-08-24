@@ -10,7 +10,7 @@ Nr. | Addr.  | Hw. Source   | defined in
   7 | 0x000C | PCINT2       | 
   8 | 0x000E | PCINT3       | 
   9 | 0x0010 | WDT          | 
- 10 | 0x0012 | TIMER2_COMPA | 
+ 10 | 0x0012 | TIMER2_COMPA | tick.c
  11 | 0x0014 | TIMER2_COMPB | 
  12 | 0x0016 | TIMER2_OVF   | sensor.c
  13 | 0x0018 | TIMER1_CAPT  | 

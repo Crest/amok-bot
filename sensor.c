@@ -14,7 +14,7 @@
 #include <avr/interrupt.h>
 #include <avr/io.h>
 
-static volatile uint8_t next_mask, mask, index;
+static volatile uint8_t  next_mask, mask, index;
 
 ISR( TIMER2_OVF_vect ) {
 	index     = 0x00;
@@ -69,5 +69,4 @@ void sensor_start() {
 
 void sensor_stop() {
 	TIMSK2 &= ~TIMER2_OVERFLOW_INTERRUPT_ENABLE;
-	TCNT2 = 0x00;
 }

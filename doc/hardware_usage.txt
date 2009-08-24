@@ -10,7 +10,10 @@ TIMER0/TIMER1: pwm.c
 	- Both timers share a common prescaler.
 	- TIMER0 not used.
 
-TIMER2: sensor.c/init_sensor()
+TIMER2: sensor.c tick.c
+	- Both source files require a prescaler of 256
+	- Call sensor.c/init_sensor() first than
+	  tick.c/init_tick().
 
 PORTC/PORTD: pwm.c
 	- PORTC0..1 is unused
